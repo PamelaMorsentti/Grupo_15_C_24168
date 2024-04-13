@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras claves y descripcion -->
+    <meta name="keywords" content="receta, saludable, rica, comida, postres, bebidas, almuerzo, cena">
+    <meta name="description" content="Comidas saludables y ricas para cuidarte sin sacrificar el sabor">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/static/img/logo/003-cuchilleria.ico" type="image/x-icon">
+    <title>Formulario de contacto</title>
+    <!-- FONT Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-Q8izPIyW9zTYSbSbAjGhk0zKvfmzCEILgTNqCwf1hGQAPySL3bIh2vTkWJKNVTcVIANksJcDfEO07cjzRvPhkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/recetas.css">
+
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="">
+            <a class="" href="/index.html">Index</a>
+            <a class="" href="recetas.html">Galeria de Recetas</a>
+            <a class="" href="contacto.html">Contacto</a>
+            <a class="" href="registro.html">Registrarse</a>
+            <a class="" href="">Iniciar sesiòn</a>
+            <a class="" href="">Carrito</a>
+            <a class="" href="#ayuda">Ayuda</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="contacto">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta o comentario? No dudes en contactarme.</p>
+            <!--<form action="enviar" method="post"> -->
+            <form action="https://formspree.io/f/xjvnazdb" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="José María" required>
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Perez García" required>
+                </div>
+                <br>
+                <div>
+                    <label for="fn">Fecha de nacimiento:</label>
+                    <input type="date" id="fn" name="fn">
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" placeholder="18" min="16">
+                </div>
+                <br>
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" name="email" placeholder="email@email.com" id="email" required>
+                </div>
+                <br>
+                <!-- ver cual de los dos menus de seleccion queda mejor -->
+                <div>
+                    <label>Motivo consulta</label>
+                    <select name="motivo">
+                        <option value="" disabled selected>--- Seleccionar ---</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="pedido">Pedido</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <!-- ver cual de los dos menus de seleccion queda mejor -->
+                <div>
+                    <label>Motivo de la consulta</label>
+                    <input list="motivo" id="consulta" name="consulta">
+                    <datalist id="motivo">
+                        <option value="Sugerencia"></option>
+                        <option value="Pedido"></option>
+                        <option value="Otro"></option>
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" maxlength="300"
+                        required>Escribe tu consulta o sugerencia</textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer id="footer">
+        <p>Copyright &copy; 2024</p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>

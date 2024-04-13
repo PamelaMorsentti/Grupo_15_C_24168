@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras claves y descripcion -->
+    <meta name="keywords" content="receta, saludable, rica, comida, postres, bebidas, almuerzo, cena">
+    <meta name="description" content="Comidas saludables y ricas para cuidarte sin sacrificar el sabor">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/static/img/logo/003-cuchilleria.ico" type="image/x-icon">
+    <title>Galeria de recetas</title>
+    <!-- FONT Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-Q8izPIyW9zTYSbSbAjGhk0zKvfmzCEILgTNqCwf1hGQAPySL3bIh2vTkWJKNVTcVIANksJcDfEO07cjzRvPhkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/recetas.css">
+
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="">
+            <a class="" href="/index.html">Index</a>
+            <a class="" href="recetas.html">Galeria de Recetas</a>
+            <a class="" href="contacto.html">Contacto</a>
+            <a class="" href="registro.html">Registrarse</a>
+            <a class="" href="">Iniciar sesiòn</a>
+            <a class="" href="">Carrito</a>
+            <a class="" href="#ayuda">Ayuda</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- <section id="titulo">
+            <i>
+                <h1>
+                    <div class="titulo">Galeria de recetas</div>
+                </h1>
+            </i>
+        </section> -->
+        <!-- Seccion seleccion de tipo de plato -->
+        <section id="categorias">
+            <div id="subtitulo">
+                <h2>Recetas por categoría</h2>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <div class="card_02">
+                <img src="/static/img/recetas/comida/pollo-caprese-con-papas.jpg" alt="plato principal">
+                <div class="contenido">
+                    <a href="#" class="button">Plato Principal</a>
+                </div>
+            </div>
+
+            <div class="card_02">
+                <img src="/static/img/recetas/comida/Ensalada de vegetales.png" alt="ensaladas">
+                <div class="contenido">
+                    <a href="#" class="button">Ensaladas</a>
+                </div>
+            </div>
+
+            <div class="card_02">
+                <img src="/static/img/recetas/desayuno/breakfast-8484285_1280.png" alt="desayunos">
+                <div class="contenido">
+                    <a href="#" class="button">Desayunos</a>
+                </div>
+            </div>
+
+            <div class="card_02">
+                <img src="/static/img/recetas/meriendas/top-view-healthy-breakfast-table.jpg" alt="meriendas">
+                <div class="contenido">
+                    <a href="#" class="button">Meriendas</a>
+                </div>
+            </div>
+
+            <div class="card_02">
+                <img src="/static/img/recetas/postres/pngegg (22).png" alt="postres">
+                <div class="contenido">
+                    <a href="#" class="button">Postres</a>
+                </div>
+            </div>
+
+            <div class="card_02">
+                <img src="/static/img/recetas/bebidas/pngegg (16).png" alt="bebidas">
+                <div class="contenido">
+                    <a href="#" class="button">Bebidas</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CARD de RECETAS -->
+        <section id="container">
+            <div id="subtitulo">
+                <h2>Recetas populares</h2>
+            </div>
+            <div class="container">
+                <!--<div id="populares" class="grid"> -->
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/recetas/comida/pollo-caprese-con-papas.jpg">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Pollo Caprese</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Delicioso pollo caprese con papas al horno</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/recetas/comida/pollo-caprese-con-papas.jpg" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/recetas/comida/pollo-caprese-con-papas.jpg" download="">Descargar
+                            imagen</a>
+
+                        <a href="/assets/pollo_caprese.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/recetas/comida/pizza estilo new york.png">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Pizza Verde</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Inigualable pizza con verdeo</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/recetas/comida//pizza estilo new york.png" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/recetas/comida/pizza estilo new york.png" download="">Descargar imagen</a>
+
+                        <a href="/assets/pizza_new_york.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/recetas/comida/tortilla-espanola.png">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Tortilla Española</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>La tortilla de la abuela</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/recetas/comida/tortilla-espanola.png" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/recetas/comida/tortilla-espanola.png" download="">Descargar imagen</a>
+
+                        <a href="/assets/tortilla-espanola.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/recetas/postres/pngegg (22).png">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Ensalada de frutas</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Un clásico veraniego</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/recetas/postres/pngegg (22).png" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/recetas/postres/pngegg (22).png" download="">Descargar imagen</a>
+
+                        <a href="/assets/ensalada_frutas.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+
+        </section>
+        <!-- LISTA CATEGORIAS -->
+        <section class="categorias">
+            <h2>Categorías</h2>
+            <ul>
+                <li><a href="#">Desayunos</a></li>
+                <li><a href="#">Almuerzos</a></li>
+                <li><a href="#">Cenas</a></li>
+                <li><a href="#">Postres</a></li>
+                <li><a href="#">Bebidas y Licuados</a></li>
+            </ul>
+        </section>
+
+        <!-- AYUDA -->
+        <section id="ayuda">
+            <p>
+                Ayuda general para navegar, registrarse y comprar en el sitio.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer id="footer">
+        <p>Copyright &copy; 2024</p>
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/* roo: selector especial que vamos a utilizar para aplicar las variables a todo el documento */
+:root {
+    /*Códigos de colores para la paleta "Cálida y acogedora":
+            Colores primarios: Beige: #F5F5DC 
+                            Marrón topo: #4D3728 
+                            Naranja quemado: #D98748 
+            Colores secundarios: Rojo teja: #B35A00 
+                            Amarillo mostaza: #F8C273 
+                            Verde oliva: #66775F 
+            Acentos: Terracota: #A7593E 
+                            Dorado: #C7A157 
+                            Verde bosque: #2E472E*/
+    --color-primario: #F5F5DC;
+    --color-fondo-header: #F8C273;
+    --color-texto-header: #4D3728;
+    --color-body: var(--color-primario);
+    --color-largo-sombra: #D98748;
+    --color-secundario-teja: #B35A00;
+    --color-secundario-oliva: #66775F;
+    --color-acento-terracota: #A7593E;
+    --color-acento-dorado: #C7A157;
+    --color-acento-bosque: #2E472E;
+    font-size: 16px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BUSCAR FUENTES CURSIVAS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #F5F5DC;
+    margin-top: 60px;
+        /* ver ua mejor manera de que el titulo no quede escondido tras el navbar */
+}
+
+header {
+    background-color: var(--color-fondo-header);
+    color: var(--color-texto-header);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 700px;
+}
+
+header div,
+header nav {
+    display: inline;
+    vertical-align: middle;
+}
+
+/* aplicamos estilo a los hipervinculos dentro del nav */
+nav a {
+    color: var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px;
+}

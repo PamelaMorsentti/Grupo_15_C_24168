@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras claves y descripcion -->
+    <meta name="keywords" content="receta, saludable, rica, comida, postres, bebidas, almuerzo, cena">
+    <meta name="description" content="Comidas saludables y ricas para cuidarte sin sacrificar el sabor">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="/static/img/logo/003-cuchilleria.ico" type="image/x-icon">
+    <title>Recetas ricas y saludables</title>
+    <!-- FONT Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-Q8izPIyW9zTYSbSbAjGhk0zKvfmzCEILgTNqCwf1hGQAPySL3bIh2vTkWJKNVTcVIANksJcDfEO07cjzRvPhkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/recetas.css">
+
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="">
+            <a class="" href="index.html">Index</a>
+            <a class="" href="/template/recetas.html">Galeria de Recetas</a>
+            <a class="" href="/template/contacto.html">Contacto</a>
+            <a class="" href="/template/registro.html">Registrarse</a>
+            <a class="" href="">Iniciar sesiòn</a>
+            <a class="" href="">Carrito</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section id="titulo">
+            <h2 class="titulo"><i>La cocina de Ana</i></h2>
+        </section>
+
+        <section class="carrusel" id="carrusel">
+            <!-- INSERTAR CARRUSEL de imagenes -->
+            <!-- cards con categorias: Plato principal, Ensaladas, Medendas, Postres y Bebidas, todos linkeados a su respectiva pagina con las recetas -->
+            <section class="categorias">
+                <div class="card_02">
+                    <img src="/static/img/recetas/comida/pollo-caprese-con-papas.jpg" alt="plato principal">
+                    <div class="contenido">
+                        <a href="#" class="button">Plato Principal</a>
+                    </div>
+                </div>
+            
+                <div class="card_02">
+                    <img src="/static/img/recetas/comida/Ensalada de vegetales.png" alt="ensaladas">
+                    <div class="contenido">
+                        <a href="#" class="button">Ensaladas</a>
+                    </div>
+                </div>
+            
+                <div class="card_02">
+                    <img src="/static/img/recetas/desayuno/breakfast-8484285_1280.png" alt="desayunos">
+                    <div class="contenido">
+                        <a href="#" class="button">Desayunos</a>
+                    </div>
+                </div>
+            
+                <div class="card_02">
+                    <img src="/static/img/recetas/meriendas/top-view-healthy-breakfast-table.jpg" alt="meriendas">
+                    <div class="contenido">
+                        <a href="#" class="button">Meriendas</a>
+                    </div>
+                </div>
+            
+                <div class="card_02">
+                    <img src="/static/img/recetas/postres/pngegg (22).png" alt="postres">
+                    <div class="contenido">
+                        <a href="#" class="button">Postres</a>
+                    </div>
+                </div>
+            
+                <div class="card_02">
+                    <img src="/static/img/recetas/bebidas/pngegg (16).png" alt="bebidas">
+                    <div class="contenido">
+                        <a href="#" class="button">Bebidas</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="banner" id="banner">
+            <!--<img src="/static/img/nav.png" id="banner" alt="Banner">-->
+            <div class="contenido">
+                <h1>Recetas Fáciles y Saludables</h1>
+                <p id="presentacion">Disfruta de una gran variedad de recetas deliciosas y nutritivas que puedes
+                    preparar en poco tiempo.</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about" id="about">
+                <h2 class="subtitulo">Sobre nosotros</h2>
+                <p id="nos">
+                    Somos un grupo entusiasta de personas deseosas de compartir con ustedes las recetas que hemos ido
+                    recolectando a lo largo de estos años, para que entre todos podamos formar una comunidad interesada en
+                    la comida saludable, nutritiva y siempre sabroza.
+                    ¡¡Comienza a explorar el sitio y únete a nosotros!!
+                </p>
+            </div>
+        </section>
+
+        <!-- Muestra las recetas más vistas o más solicitadas en formato Card, con vinculo a la receta-->
+        <section class="recetas">
+            <h2>Recetas Populares</h2>
+            <ul id="lista-recetas">
+            </ul>
+        </section>
+
+        <!-- SECCION A BORRAR -->
+        <section>
+            <audio src="/assets/audio/#" controls></audio>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EuYuv1kNDrQ?si=9E0MljWGArsfyZAs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>¡Colabora con nosotros!</legend>
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="file">Seleccionar archivo: </label>
+                    <input type="file" name="file" id="file">
+                </div>
+                <p>Por supuesto daremos créditos a su autor y serán parte de esta gran familia de amantes del buen comer
+                </p>
+
+            </fieldset>
+            <p>
+                ¿Quieres colaborar con nosotros? ¿Eres entusiasta de la cocina? Ponte en contacto con nosotros
+            </p>
+            <a href="/template/contacto.html">Formulario de Contacto</a>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer" id="footer">
+        <p>Copyright &copy; 2024</p>
+        <section class="iconos" id="iconos">
+            <!-- <li><a href="/static/img/iconos/facebook.png"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="/static/img/iconos/gorjeo.png"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="/static/img/iconos/instagram.png"><i class="fa fa-instagram"></i></a></li> -->
+            <a alt="fecebook" href="https://www.facebook.com/"><img src="/static/img/iconos/facebook.png"></a>           
+            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="/static/img/iconos/gorjeo.png"></a>
+            <a alt="instagram" href="https://www.instagram.com/"><img src="/static/img/iconos/instagram.png"></a>
+            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="/static/img/iconos/pinterest.png"></a>
+            <a alt="flickr" href="https://www.flickr.com/"><img src="/static/img/iconos/flickr.png"></a>
+        </section>
+
+    </footer>
+    <!-- Enlace al archivo JavaScript externo -->
+    <!-- <script src="/js/carrusel.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+/* roo: selector especial que vamos a utilizar para aplicar las variables a todo el documento */
+:root {
+    /*Códigos de colores para la paleta "Cálida y acogedora":
+            Colores primarios: Beige: #F5F5DC 
+                            Marrón topo: #4D3728 
+                            Naranja quemado: #D98748 
+            Colores secundarios: Rojo teja: #B35A00 
+                            Amarillo mostaza: #F8C273 
+                            Verde oliva: #66775F 
+            Acentos: Terracota: #A7593E 
+                            Dorado: #C7A157 
+                            Verde bosque: #2E472E*/
+    --color-primario: #F5F5DC;
+    --color-fondo-header: #F8C273;
+    --color-texto-header: #4D3728;
+    --color-body: var(--color-primario);
+    --color-largo-sombra: #D98748;
+    --color-secundario-teja: #B35A00;
+    --color-secundario-oliva: #66775F;
+    --color-acento-terracota: #A7593E;
+    --color-acento-dorado: #C7A157;
+    --color-acento-bosque: #2E472E;
+    font-size: 16px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BUSCAR FUENTES CURSIVAS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #F5F5DC;
+}
+
+.titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    /*color:#A7593E;*/
+    text-align: center;
+    background-image: url("/static/img/nav.png");
+    /* cambiar la imagen para que se vean mejor las letras */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    color: var(--color-acento-bosque);
+    background-clip: text;
+}
+
+/* Estilos para la imagen del banner */
+.banner {
+    background-image: url("/static/img/fondo/fondo.png");
+    background-size: cover;
+    /* ajustar la imagen al contenedor*/
+    background-repeat: no-repeat;
+    background-position: right;
+    color: var(--color-fondo-header);
+    font-size: 1.2rem;
+    text-align: right;
+    /* Alinea todo el contenido a la derecha */
+    height: 80vh;
+
+    display: flex;
+    /* Utiliza flexbox para alinear el contenido verticalmente */
+    flex-direction: column;
+    /* Alinea los elementos en columna */
+    justify-content: center;
+    /*justify-content: flex-start; /* Alinea los elementos en la parte superior de la sección */
+    align-items: flex-end;
+    /* Alinea los elementos a la derecha verticalmente */
+    padding: 0 20px;
+    /* Añade espacio alrededor del contenido */
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+}
+
+.banner p {
+    text-align: right;
+    max-width: 300px;
+    margin: auto 0 50;
+    align-self: flex-start;
+}
+
+.carrusel {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carrusel .categorias {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.carrusel .card_02 {
+    flex: 0 0 auto;
+    width: calc(100% / 6 - 2px);
+    margin: 3px;
+    vertical-align: top;
+    transition: color 0.3s ease-in-out;
+}
+
+.carrusel .card_02:hover {
+    transform: scale(1.2);
+}
+
+.carrusel .contenido {
+    max-height: 15%;
+}
+
+/* .contenido {
+    margin: 0 auto;
+    padding: 150px;
+} */
+
+p #presentacion {
+    text-align: left;
+    margin: 10px;
+}
+
+.about {
+    width: 100%;
+    height: 200px;
+    font-family: "Satisfy", cursive;
+    /* font-family: "Dancing Script", cursive; */
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    /* font-weight: <weight>;
+    font-style: normal; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--color-secundario-oliva);
+}
+
+#about {
+    width: 50%;
+    height: 100%;
+    color: var(--color-primario);
+    padding-top: 0;
+    margin: 0;
+}
+
+#nos {
+    color: var(--color-texto-header);
+}
+
+/* p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    /* fonr-family: buscar una decorada 
+
+} */
+
+.footer {
+    height: 4rem;
+    background-color: var(--color-fondo-header);
+    color: var(--color-texto-header);
+    text-align: center;
+    padding: 20px 0;
+    background-image: url("/static/img/fondo/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+
+.footer .iconos img{
+    display: inline;
+    height: 2rem;
+    padding: 1rem;
+    object-fit: contain;
+}

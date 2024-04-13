@@ -1,0 +1,242 @@
+/* roo: selector especial que vamos a utilizar para aplicar las variables a todo el documento */
+:root {
+    /*Códigos de colores para la paleta "Cálida y acogedora":
+            Colores primarios: Beige: #F5F5DC 
+                            Marrón topo: #4D3728 
+                            Naranja quemado: #D98748 
+            Colores secundarios: Rojo teja: #B35A00 
+                            Amarillo mostaza: #F8C273 
+                            Verde oliva: #66775F 
+            Acentos: Terracota: #A7593E 
+                            Dorado: #C7A157 
+                            Verde bosque: #2E472E*/
+    --color-primario: #F5F5DC;
+    --color-fondo-header: #F8C273;
+    --color-texto-header: #4D3728;
+    --color-body: var(--color-primario);
+    --color-largo-sombra: #D98748;
+    --color-secundario-teja: #B35A00;
+    --color-secundario-oliva: #66775F;
+    --color-acento-terracota: #A7593E;
+    --color-acento-dorado: #C7A157;
+    --color-acento-bosque: #2E472E;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background: #F5F5DC;
+    padding: 1rem;
+}
+
+.titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--color-acento-bosque);
+    background-clip: text;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("/assets/fonts/Dancing_Script/static/DancingScript-Regular.ttf");
+
+    font-family: "Satisfy";
+    src: url("/assets/fonts/Dancing_Script,Satisfy");
+}
+
+#subtitulo {
+    font-family: "Satisfy", cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*
+.card {
+    display: inline-block;
+    background-color: var(--color-secundario-oliva);
+    max-width: 350px;
+    height: 480px;
+    box-sizing: content-box;
+    width: 100%;
+    box-shadow: 4px 4px 4px 4px #4D3728;
+    text-align: center;
+    border-radius: 1%;
+    overflow: hidden; /* para que las imagenes no se salgan del contenedo 
+}*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las cards se envuelvan a la siguiente línea si no caben todas en una fila */
+    justify-content: space-around;
+    /* Distribuye las tarjetas equitativamente con espacio alrededor */
+}
+
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card_02 {
+    width: 300px;
+    height: 500px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+        /* Ajusta el índice z para que esté detrás del navbar */
+}
+
+.card_02 img {
+    position: absolute;
+    /* Posicionamiento absoluto para la imagen */
+    top: 0;
+    /* Posiciona la imagen en la parte superior */
+    left: 0;
+    /* Posiciona la imagen en el borde izquierdo */
+    width: 100%;
+    /* Ancho de la imagen */
+    height: 85%;
+    /* Altura de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen para que cubra toda la tarjeta */
+}
+
+.card_02 .contenido {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+    box-shadow: 4px 4px 4px 4px #4D3728;
+    padding: 5px;
+}
+
+.card_02 .contenido .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:"Satisfy", cursive;
+    text-decoration: none;
+    font-size: 1.7rem;
+    background-color: transparent;
+    /* Establece el color de fondo del botón como transparente */
+    color: var(--color-texto-header);
+    /* Utiliza el color de texto definido */
+    transition: color 0.3s ease;
+    /* Transición suave para el cambio de color del texto */
+}
+
+.card_02 .contenido .button:hover {
+    color: var(--color-fondo-header);
+        /* Cambia el color del texto al pasar el mouse */
+    font-weight: bold;
+        /* Cambia el peso del texto a negrita */
+}
+
+.card {
+    max-width: 300px;
+    /* Ancho àximo de la tarjeta */
+    width: 100%;
+    height: 450px;
+    /* Alto de la tarjeta */
+    background-color: var(--color-secundario-oliva);
+    border: 1px solid #ccc;
+    /* Borde de la tarjeta */
+    border-radius: 1%;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Evita que la imagen sobresalga de la tarjeta */
+    display: flex;
+    /* Utiliza flexbox para alinear elementos */
+    flex-direction: column;
+    /* Alinea los elementos en columna */
+    text-align: center;
+    /* Alinea los textos horizontalmente */
+    justify-content: space-between;
+    /* Ajusta el espacio entre los elementos */
+    padding: 10px;
+    /* Espacio alrededor del contenido */
+    box-shadow: 4px 4px 4px 4px #4D3728;
+    transition: transform 0.3s ease-in-out;  /* aplicamos una trasnformacion zoom */
+}
+
+.card:hover {
+    transform: scale(1.2); /* aplicamos la trasnformacion cuando pasa el mouse por arriba */
+}
+
+.card-img {
+    flex: .8;
+    /* La imagen ocupará todo el espacio disponible verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-responsive {
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    /* La imagen no superará la altura máxima de la tarjeta */
+    object-fit: contain;
+    /* Ajusta la imagen dentro de su contenedor sin deformarla */
+}
+
+/* .card img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+} */
+
+.card-titulo,
+.card-text,
+.card-link {
+    width: 100%;
+    text-align: center;
+}
+
+
+.card h3 {
+    font-family: "Satisfy", cursive;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.card a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--color-texto-header);
+    font-size: smaller;
+}
+
+a:hover {
+    color: var(--color-acento-bosque);
+    font-weight: bold;
+    cursor: pointer;
+}
