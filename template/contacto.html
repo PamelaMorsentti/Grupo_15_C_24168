@@ -28,28 +28,57 @@
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/recetas.css">
+    <link rel="stylesheet" href="/static/css/carrusel.css">
 
 </head>
 
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <!-- LOGO -->
-        <div class="logo">
-            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        <!-- Barra con links generales -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <a href="#">Ordena tu libro de recetas hoy!!</a>
+            </div>
+            <div class="top-bar-links" id="top-bar-links">Nuestras redes:
+                <ul class="social-links">
+                    <li><a href="http://instagram.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/instagram.png" width="16" height="16" aria-label="Instagram"></a>
+                    </li>
+                    <li><a href="https://pinterest.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/pinterest.png" width="16" height="16" aria-label="Pinterest"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/facebook.png" width="16" height="16" aria-label="Facebook"></a>
+                    </li>
+                    <li><a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/gorjeo.png" width="16" height="16" aria-label="Twitter"></a>
+                    </li>
+                    <li><a href="https://www.flickr.com/@#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/flickr.png" width="16" height="16" aria-label="Flickr"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <!-- NAVBAR -->
-        <nav class="">
-            <a class="" href="/index.html">Index</a>
-            <a class="" href="recetas.html">Galeria de Recetas</a>
-            <a class="" href="contacto.html">Contacto</a>
-            <a class="" href="registro.html">Registrarse</a>
-            <a class="" href="">Iniciar sesiòn</a>
-            <a class="" href="">Carrito</a>
-            <a class="" href="#ayuda">Ayuda</a>
-        </nav>
-
+        <!-- LOGO -->
+        <div class="navbar">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./static/img/logo/cocinero.png" alt="logo" class="logo">
+                </a>
+            </div>
+    
+            <!-- NAVBAR -->
+            <nav class="nav">
+                <a class="" href="index.html">Index</a>
+                <a class="" href="#recetas">Galeria de Recetas</a>
+                <a class="" href="./template/contacto.html">Contacto</a>
+                <a class="" href="./template/registro.html">Registrarse</a>
+                <a class="" href="">Iniciar sesiòn</a>
+                <a class="" href="">Carrito</a>
+            </nav>
+        </div>
+    
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -119,15 +148,26 @@
     </main>
 
     <!-- PIE DE PAGINA -->
-    <footer id="footer">
+    <footer class="footer" id="footer">
         <p>Copyright &copy; 2024</p>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-
+        <section class="iconos" id="iconos">
+            <a alt="fecebook" href="https://www.facebook.com/"><img src="/static/img/iconos/facebook.png" width="32"
+                    height="32"></a>
+            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="/static/img/iconos/gorjeo.png" width="32"
+                    height="32"></a>
+            <a alt="instagram" href="https://www.instagram.com/"><img src="/static/img/iconos/instagram.png" width="32"
+                    height="32"></a>
+            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="/static/img/iconos/pinterest.png" width="32"
+                    height="32"></a>
+            <a alt="flickr" href="https://www.flickr.com/"><img src="/static/img/iconos/flickr.png" width="32"
+                    height="32"></a>
+        </section>
+        <div class="footer-image">
+            <img src="./static/img/fondo/footer.png" alt="Footer Image">
+        </div>
     </footer>
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="./js/script.js"></script>
 
 </body>
 

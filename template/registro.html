@@ -24,97 +24,203 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
         rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/recetas.css">
+    <link rel="stylesheet" href="/static/css/registro.css">
 
 </head>
 
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <!-- LOGO -->
-        <div class="logo">
-            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        <!-- Barra con links generales -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <a href="#">Ordena tu libro de recetas hoy!!</a>
+            </div>
+            <div class="top-bar-links" id="top-bar-links">Nuestras redes:
+                <ul class="social-links">
+                    <li><a href="http://instagram.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="../static/img/iconos/instagram.png" width="16" height="16" aria-label="Instagram"></a>
+                    </li>
+                    <li><a href="https://pinterest.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="../static/img/iconos/pinterest.png" width="16" height="16" aria-label="Pinterest"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="../static/img/iconos/facebook.png" width="16" height="16" aria-label="Facebook"></a>
+                    </li>
+                    <li><a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="../static/img/iconos/gorjeo.png" width="16" height="16" aria-label="Twitter"></a>
+                    </li>
+                    <li><a href="https://www.flickr.com/@#" target="_blank" rel="noopener noreferrer">
+                            <img src="../static/img/iconos/flickr.png" width="16" height="16" aria-label="Flickr"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <!-- NAVBAR -->
-        <nav class="">
-            <a class="" href="/index.html">Index</a>
-            <a class="" href="recetas.html">Galeria de Recetas</a>
-            <a class="" href="contacto.html">Contacto</a>
-            <a class="" href="registro.html">Registrarse</a>
-            <a class="" href="">Iniciar sesiòn</a>
-            <a class="" href="">Carrito</a>
-            <a class="" href="#ayuda">Ayuda</a>
-        </nav>
-
+        <!-- LOGO -->
+        <div class="navbar">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../static/img/logo/cocinero.png" alt="logo" class="logo">
+                </a>
+            </div>
+    
+            <!-- NAVBAR -->
+            <nav class="nav">
+                <a class="" href="../index.html">Index</a>
+                <!-- <a class="" href="#recetas">Galeria de Recetas</a>
+                <a class="" href="./template/contacto.html">Contacto</a> -->
+                <a class="" href="../template/registro.html">Registrarse</a>
+                <a class="" href="">Iniciar sesiòn</a>
+                <a class="" href="">Carrito</a>
+            </nav>
+        </div>
+    
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-        <section class="contacto">
+        <section class="registro">
 
             <h1>Registro</h1>
+            <form action="enviar" class="formulario" id="formulario" method="post">
+                <!-- GRUPO NOMBRE -->
+                <div class="formulario_grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario_label">Nombre:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="José María"
+                            required>
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El nombre tiene que ser de 4 a 16 dìgitos y solo puede contener
+                        letras.</p>
+                </div>
+                <!-- GRUPO APELLIDO -->
+                <div class="formulario_grupo" id="grupo_apellido">
+                    <label for="apellido" class="formulario_label">Apellido:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="apellido" id="apellido"
+                            placeholder="Perez García" required>
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El nombre tiene que ser de 4 a 16 dìgitos y solo puede contener
+                        letras.</p>
+                </div>
+                <!-- GRUPO FECHA de NACIMIENTO -->
+                <div class="formulario_grupo" id="grupo_fn">
+                    <label for="fn" class="formulario_label">Fecha de nacimiento:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="date" class="formulario_input" name="fn" id="fn">
+                    </div>
+                </div>
+                <!-- GRUPO EDAD -->
+                <div class="formulario_grupo" id="grupo_edad">
+                    <label for="edad" class="formulario_label">Edad:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="number" class="formulario_input" name="edad" id="edad" placeholder="18" min="16">
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                </div>
+                <!-- GRUPO USUARIO -->
+                <div class="formulario_grupo" id="grupo_usuario">
+                    <label for="usuario" class="formulario_label">Usuario:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="jose_123"
+                            required>
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El usuario tiene que ser de 4 a 16 dìgitos y solo puede contener
+                        letras, numeros y
+                        guion bajo.</p>
+                </div>
+                <!-- GRUPO EMAAIL -->
+                <div class="formulario_grupo" id="grupo_email">
+                    <label for="email" class="formulario_label">E-mail:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="email" class="formulario_input" name="email" id="email"
+                            placeholder="email@email.com" spellcheck="false" required>
+                        <!-- <i class="formulario_validacion-estado fas fa-times-circle"></i> -->
+                        <i class="uil uil-envelope email-icon"></i>
+                    </div>
+                    <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                        guion bajo.</p>
+                </div>
+                <!-- GRUPO PASSWORD -->
+                <div class="formulario_grupo" id="grupo_password">
+                    <label for="password" class="formulario_label">Password:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="password" id="password" required>
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </div>
+                <!-- GRUPO PASSWORD 2-->
+                <div class="formulario_grupo" id="grupo_password2">
+                    <label for="password2" class="formulario_label">Repetir Password:</label>
+                    <div class="formulario_grupo-input">
+                        <input type="password" class="formulario_input" name="password2" id="password2" required>
+                        <i class="formulario_validacion-estado uil uil-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">Ambos passwords deben ser iguales.</p>
+                </div>
+                <!-- GRUPO TERMINOS y CONDICIONES-->
+                <div class="formulario_grupo formulario_grupo-terminos" id="grupo__terminos">
+                    <label for="terminos" class="formulario_label">
+                        <input type="checkbox" class="formulario_checkbox" name="terminos" id="terminos" required>Acepto
+                        los Terminos y Condiciones
+                    </label>
+                </div>
 
-            <form action="enviar" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="José María" required>
-                </div>
-                <br>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Perez García" required>
-                </div>
-                <br>
-                <div>
-                    <label for="fn">Fecha de nacimiento:</label>
-                    <input type="date" id="fn" name="fn">
-                </div>
-                <br>
-                <div>
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" placeholder="18" min="16">
-                </div>
-                <br>
-                <div>
-                    <label>E-mail:</label>
-                    <input type="email" name="email" placeholder="email@email.com" id="email" required>
-                </div>
-                <br>
-                <div>
-                    <label>Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <!-- agregar confirmacion de contraseña -->
+                <div class="formulario_mensaje" id="formulario_mensaje">
+                    <p><i class="uil uil-exclamation-triangle"></i><b>Error:</b>Por favor rellene el formulario
+                        correctamente.</p>
                 </div>
 
-                <br>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+                <div class="formulario_grupo formulario_grupo-btn-enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <!-- <button type="reset" class="formulario_btn">Borrar</button> -->
+                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">¡ Formulario enviado exitosamente
+                        !</p>
+                </div>
             </form>
             <br>
 
             <fieldset>
                 <legend>Consultas</legend>
                 <p>¿Tienes alguna pregunta sobre el registro? No dudes en contactarme.</p>
-                <a href="/template/contacto.html">Formulario de Contacto</a>
+                <a href="#contacto">Formulario de Contacto</a>
             </fieldset>
         </section>
     </main>
 
     <!-- PIE DE PAGINA -->
-    <footer id="footer">
+    <footer class="footer" id="footer">
         <p>Copyright &copy; 2024</p>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-
+        <section class="iconos" id="iconos">
+            <a alt="fecebook" href="https://www.facebook.com/"><img src="../static/img/iconos/facebook.png" width="32"
+                    height="32"></a>
+            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="../static/img/iconos/gorjeo.png" width="32"
+                    height="32"></a>
+            <a alt="instagram" href="https://www.instagram.com/"><img src="../static/img/iconos/instagram.png" width="32"
+                    height="32"></a>
+            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="../static/img/iconos/pinterest.png"
+                    width="32" height="32"></a>
+            <a alt="flickr" href="https://www.flickr.com/"><img src="../static/img/iconos/flickr.png" width="32"
+                    height="32"></a>
+        </section>
+        <div class="footer-image">
+            <img src="../static/img/footer.png" alt="Footer Image">
+        </div>
     </footer>
 
+        <script src="/js/registro.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

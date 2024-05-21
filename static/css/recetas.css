@@ -26,6 +26,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
@@ -35,16 +37,187 @@ body {
     padding: 1rem;
 }
 
+
 .titulo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Satisfy", cursive;
     font-size: 3rem;
     text-align: center;
     color: var(--color-acento-bosque);
     background-clip: text;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 0.5rem;
 }
+.receta {
+    width: 100%;
+    background-color: var(--color-secundario-oliva);
+    color: var(--color-texto-header);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
 
+.receta-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--color-primario);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.receta-texto {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.receta-img {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receta-img img{
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/*
+.receta {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.receta-img {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.receta-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*/
+.receta-texto {
+    flex: 2;
+    padding: 10px;
+}
+
+.receta-texto h2 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    color: var(--color-secundario-teja);
+    padding-top: .5rem;
+}
+
+.receta h3 {
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: 'Satisfy', cursive;
+    color: var(--color-secundario-teja);
+    padding-left: 2rem;
+    padding-top: .5rem;
+}
+
+.receta-texto ul,
+.receta-texto ol {
+    padding-left: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-container button {
+    flex: 1;
+    max-width: 48%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: .25rem;
+    background-color: var(--color-largo-sombra);
+    color: var(--color-primario);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button-container button:hover {
+    background-color: var(--color-acento-dorado);
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .receta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .receta-img,
+    .receta-texto {
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container button {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .receta-img img {
+        width: 100%;
+    }
+}
+
+/* esto es para las CARDS de la pag index.html, reutilizable en la pag recetas.html,
+de las recetas populares o listado de recetas */
+/*
+.card {
+    display: inline-block;
+    background-color: var(--color-secundario-oliva);
+    max-width: 350px;
+    height: 480px;
+    box-sizing: content-box;
+    width: 100%;
+    box-shadow: 4px 4px 4px 4px #4D3728;
+    text-align: center;
+    border-radius: 1%;
+    overflow: hidden; /* para que las imagenes no se salgan del contenedo 
+}*/
 @font-face {
     font-family: "DancingScript";
     src: url("/assets/fonts/Dancing_Script/static/DancingScript-Regular.ttf");
@@ -60,21 +233,6 @@ body {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
-/*
-.card {
-    display: inline-block;
-    background-color: var(--color-secundario-oliva);
-    max-width: 350px;
-    height: 480px;
-    box-sizing: content-box;
-    width: 100%;
-    box-shadow: 4px 4px 4px 4px #4D3728;
-    text-align: center;
-    border-radius: 1%;
-    overflow: hidden; /* para que las imagenes no se salgan del contenedo 
-}*/
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +260,7 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 1;
-        /* Ajusta el índice z para que esté detrás del navbar */
+    /* Ajusta el índice z para que esté detrás del navbar */
 }
 
 .card_02 img {
@@ -118,6 +276,7 @@ body {
     /* Altura de la imagen */
     object-fit: cover;
     /* Ajusta la imagen para que cubra toda la tarjeta */
+    border-radius: 20px;
 }
 
 .card_02 .contenido {
@@ -130,17 +289,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F5F5DC;
+    background-color: var(--color-fondo-header);
     box-shadow: 4px 4px 4px 4px #4D3728;
     padding: 5px;
+    border-radius: 10px;
 }
 
 .card_02 .contenido .button {
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 5px; */
     cursor: pointer;
-    font-family:"Satisfy", cursive;
+    font-family: "Satisfy", cursive;
     text-decoration: none;
     font-size: 1.7rem;
     background-color: transparent;
@@ -152,10 +312,10 @@ body {
 }
 
 .card_02 .contenido .button:hover {
-    color: var(--color-fondo-header);
-        /* Cambia el color del texto al pasar el mouse */
+    color: var(--color-acento-bosque);
+    /* Cambia el color del texto al pasar el mouse */
     font-weight: bold;
-        /* Cambia el peso del texto a negrita */
+    /* Cambia el peso del texto a negrita */
 }
 
 .card {
@@ -164,7 +324,7 @@ body {
     width: 100%;
     height: 450px;
     /* Alto de la tarjeta */
-    background-color: var(--color-secundario-oliva);
+    background-color: var(--color-acento-dorado);
     border: 1px solid #ccc;
     /* Borde de la tarjeta */
     border-radius: 1%;
@@ -182,11 +342,13 @@ body {
     padding: 10px;
     /* Espacio alrededor del contenido */
     box-shadow: 4px 4px 4px 4px #4D3728;
-    transition: transform 0.3s ease-in-out;  /* aplicamos una trasnformacion zoom */
+    transition: transform 0.3s ease-in-out;
+    /* aplicamos una trasnformacion zoom */
 }
 
 .card:hover {
-    transform: scale(1.2); /* aplicamos la trasnformacion cuando pasa el mouse por arriba */
+    transform: scale(1.2);
+    /* aplicamos la trasnformacion cuando pasa el mouse por arriba */
 }
 
 .card-img {
@@ -239,4 +401,32 @@ a:hover {
     color: var(--color-acento-bosque);
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .categorias {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorias {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categorias {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
 }

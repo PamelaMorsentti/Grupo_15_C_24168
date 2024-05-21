@@ -21,50 +21,161 @@
     --color-acento-dorado: #C7A157;
     --color-acento-bosque: #2E472E;
     font-size: 16px;
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* BUSCAR FUENTES CURSIVAS */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background: #F5F5DC;
-    margin-top: 60px;
-        /* ver ua mejor manera de que el titulo no quede escondido tras el navbar */
 }
 
 header {
     background-color: var(--color-fondo-header);
     color: var(--color-texto-header);
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
-#logo {
+.top-bar {
+    background-color: #5F5E4A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar .top-bar-content {
+    width: 50%;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin: 0 auto;
+    flex-grow: 1;
+    box-sizing: inherit;
+    text-align: center;
+}
+
+.top-bar .top-bar-content a {
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.top-bar .top-bar-links {
+    width: 50%;
+    align-items: center;
+    min-width: 298px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 25%;
+    position: relative;
+    color: white;
+    background-color: #4C4A35;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links {
+    display: flex;
+    padding: 0;
+}
+
+.social-links li {
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+/* esto tiene que ver von el codigo para hace rel menu contraible en la esquina, ARREGLAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+/* */
+.logo {
     width: 30px;
     height: auto;
     border-radius: 50%;
-    margin-right: 700px;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
 
-header div,
-header nav {
-    display: inline;
-    vertical-align: middle;
+.logo-container a:hover .logo {
+    transform: rotate(20deg);
 }
 
-/* aplicamos estilo a los hipervinculos dentro del nav */
-nav a {
-    color: var(--color-texto-header);
-    text-decoration: none;
-    margin: 0 10px;
+.logo-container {
+    display: flex;
+}
+
+/* Media queries para  navbar */
+@media (max-width: 1024px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .top-bar-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        /* align-items: center; */
+    }
+
+    .nav a {
+        padding: 0.5rem 0;
+        /* text-align: center; */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        padding: 0 0.5rem;
+    }
+
+    .navbar {
+        padding: 0 0.5rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 40px;
+    }
+
+    .top-bar {
+        padding: 0 0.25rem;
+    }
+
+    .navbar {
+        padding: 0 0.25rem;
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+    }
 }

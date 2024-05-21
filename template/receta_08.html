@@ -8,61 +8,152 @@
     <meta name="keywords" content="receta, saludable, rica, comida, postres, bebidas, almuerzo, cena">
     <meta name="description" content="Comidas saludables y ricas para cuidarte sin sacrificar el sabor">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/static/img/logo/003-cuchilleria.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img/logo/003-cuchilleria.ico" type="image/x-icon">
     <title>Recetas ricas y saludables</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- FONT Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-Q8izPIyW9zTYSbSbAjGhk0zKvfmzCEILgTNqCwf1hGQAPySL3bIh2vTkWJKNVTcVIANksJcDfEO07cjzRvPhkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/recetas.css">
+
+
 </head>
 
 <body>
     <!-- ENCABEZADO -->
     <header>
+        <!-- Barra con links generales -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <a href="#">Ordena tu libro de recetas hoy!!</a>
+            </div>
+            <div class="top-bar-links" id="top-bar-links">Nuestras redes:
+                <ul class="social-links">
+                    <li><a href="http://instagram.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/img/iconos/instagram.png" width="16" height="16"
+                                aria-label="Instagram"></a></li>
+                    <li><a href="https://pinterest.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/img/iconos/pinterest.png" width="16" height="16"
+                                aria-label="Pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/img/iconos/facebook.png" width="16" height="16" aria-label="Facebook"></a>
+                    </li>
+                    <li><a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/img/iconos/gorjeo.png" width="16" height="16" aria-label="Twitter"></a>
+                    </li>
+                    <li><a href="https://www.flickr.com/@#" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/img/iconos/flickr.png" width="16" height="16" aria-label="Flickr"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- LOGO -->
-        <div class="logo">
-            <img id="logo" src="#" alt="logo">
+        <div class="navbar">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../static/img/logo/cocinero.png" alt="logo" class="logo">
+                </a>
+            </div>
+
+            <!-- NAVBAR -->
+            <nav class="nav">
+                <a class="" href="../index.html">Index</a>
+                <!-- <a class="" href="./index.html/#recetas">Recetas Populares</a> -->
+                <!-- <a class="" href="#contacto">Contacto</a> -->
+                <a class="" href="../template/registro.html">Registrarse</a>
+                <a class="" href="">Iniciar sesiòn</a>
+                <a class="" href="">Carrito</a>
+            </nav>
         </div>
 
-        <!-- NAVBAR -->
-        <nav class="">
-            <a class="" href="/index.html">Index</a>
-            <a class="" href="recetas.html">Galeria de Recetas</a>
-            <a class="" href="contacto.html">Contacto</a>
-            <a class="" href="registro.html">Registrarse</a>
-            <a class="" href="">Iniciar sesiòn</a>
-            <a class="" href="">Carrito</a>
-            <a class="" href="#ayuda">Ayuda</a>
-        </nav>
-
     </header>
-    <section class="receta">
-        <img src="/imagenes/recetas-pollo-caprese-con-papas-crocantes.png" alt="Pollo Caprese">
-        <h2>Pollo Caprese</h2>
-        <h3>Ingredientes:</h3>
-        <ul>
-            <li>1 pechuga de pollo</li>
-            <li>1 tomate</li>
-            <li>Queso muzzarella</li>
-            <li>Albahaca</li>
-            <li>Pimienta Blanca molida</li>
-            <li>Condimento para aves</li>
-            <li>Ajo Granulado</li>
-            <li>Aceite</li>
-            <li>Jugo de limón</li>
-    
-        </ul>
-        <h3>Preparación:</h3>
-        <ol>
-            <li>Cortar la pechuga a la mitad.</li>
-            <li>Colocar en un recipiente, y agregar jugo de limón, Pimienta Blanca, Condimento para Aves y Ajo
-                Granulado.</li>
-            <li>Dejar macerar por 30 minutos en la heladera.</li>
-            <li>Una vez listo, colocar en una fuente para horno aceitada.</li>
-            <li>Cortar los tomates en rodajas y la muzzarella en trozos, para colocar encima de las pechugas.</li>
-            <li>Enviar a horno a temperatura media por 25 minutos o hasta que se encuentren completamente cocidas.</li>
-            <li>Al momento de servir, decorar con albahaca cortada en trozos.</li>
-            <li>Sirve ¡y disfruta!</li>
-        </ol>
-    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section id="titulo">
+            <h2 class="titulo"><i>- Pollo Caprese -</i></h2>
+        </section>
+        <section class="receta">
+            <div class="receta-container">
+                <div class="receta-img">
+                    <img src="../static/img/comidaDIBB/plato-ppal/pollo_papas.jpg" alt="Pollo Caprese">
+                </div>
+                <div class="receta-texto">
+                    <h2>Pollo Caprese</h2>
+                    <h3>Ingredientes:</h3>
+                    <ul>
+                        <li>1 pechuga de pollo</li>
+                        <li>1 tomate</li>
+                        <li>Queso muzzarella</li>
+                        <li>Albahaca</li>
+                        <li>Pimienta Blanca molida</li>
+                        <li>Condimento para aves</li>
+                        <li>Ajo Granulado</li>
+                        <li>Aceite</li>
+                        <li>Jugo de limón</li>
+
+                    </ul>
+                    <h3>Preparación:</h3>
+                    <ol>
+                        <li>Cortar la pechuga a la mitad.</li>
+                        <li>Colocar en un recipiente, y agregar jugo de limón, Pimienta Blanca, Condimento para Aves y
+                            Ajo
+                            Granulado.</li>
+                        <li>Dejar macerar por 30 minutos en la heladera.</li>
+                        <li>Una vez listo, colocar en una fuente para horno aceitada.</li>
+                        <li>Cortar los tomates en rodajas y la muzzarella en trozos, para colocar encima de las
+                            pechugas.</li>
+                        <li>Enviar a horno a temperatura media por 25 minutos o hasta que se encuentren completamente
+                            cocidas.</li>
+                        <li>Al momento de servir, decorar con albahaca cortada en trozos.</li>
+                        <li>Sirve ¡y disfruta!</li>
+                    </ol>
+                    <div class="button-container">
+                        <button type="button">Imprimir</button>
+                        <button type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- PIE DE PAGINA -->
+    <footer class="footer" id="footer">
+        <p>Copyright &copy; 2024</p>
+        <section class="iconos" id="iconos">
+            <a alt="fecebook" href="https://www.facebook.com/"><img src="/static/img/iconos/facebook.png" width="32"
+                    height="32"></a>
+            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="/static/img/iconos/gorjeo.png" width="32"
+                    height="32"></a>
+            <a alt="instagram" href="https://www.instagram.com/"><img src="/static/img/iconos/instagram.png" width="32"
+                    height="32"></a>
+            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="/static/img/iconos/pinterest.png"
+                    width="32" height="32"></a>
+            <a alt="flickr" href="https://www.flickr.com/"><img src="/static/img/iconos/flickr.png" width="32"
+                    height="32"></a>
+        </section>
+        <div class="footer-image">
+            <img src="../static/img/footer.png" alt="Footer Image">
+        </div>
+
+    </footer>
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="./js/script.js"></script>
+    <!-- <script src="/js/carrusel.js"></script> -->
+
 </body>
 
 </html>

@@ -8,7 +8,7 @@
     <meta name="keywords" content="receta, saludable, rica, comida, postres, bebidas, almuerzo, cena">
     <meta name="description" content="Comidas saludables y ricas para cuidarte sin sacrificar el sabor">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/static/img/logo/003-cuchilleria.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./static/img/logo/003-cuchilleria.ico" type="image/x-icon">
     <title>Recetas ricas y saludables</title>
     <!-- FONT Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -23,81 +23,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&display=swap"
         rel="stylesheet">
-        
+
     <!-- CSS -->
-    <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="/static/css/header.css">
-    <link rel="stylesheet" href="/static/css/recetas.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/recetas.css">
 
 </head>
 
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <!-- LOGO -->
-        <div class="logo">
-            <img id="logo" src="/static/img/logo/cocinero.png" alt="logo">
+        <!-- Barra con links generales -->
+        <div class="top-bar">
+            <div class="top-bar-content">
+                <a href="#">Ordena tu libro de recetas hoy!!</a>
+            </div>
+            <div class="top-bar-links" id="top-bar-links">Nuestras redes:
+                <ul class="social-links">
+                    <li><a href="http://instagram.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/instagram.png" width="16" height="16"
+                                aria-label="Instagram"></a></li>
+                    <li><a href="https://pinterest.com/#/" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/pinterest.png" width="16" height="16"
+                                aria-label="Pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/facebook.png" width="16" height="16"
+                                aria-label="Facebook"></a>
+                    </li>
+                    <li><a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/gorjeo.png" width="16" height="16" aria-label="Twitter"></a>
+                    </li>
+                    <li><a href="https://www.flickr.com/@#" target="_blank" rel="noopener noreferrer">
+                            <img src="./static/img/iconos/flickr.png" width="16" height="16" aria-label="Flickr"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <!-- LOGO -->
+        <div class="navbar">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./static/img/logo/cocinero.png" alt="logo" class="logo">
+                </a>
+            </div>
 
-        <!-- NAVBAR -->
-        <nav class="">
-            <a class="" href="index.html">Index</a>
-            <a class="" href="/template/recetas.html">Galeria de Recetas</a>
-            <a class="" href="/template/contacto.html">Contacto</a>
-            <a class="" href="/template/registro.html">Registrarse</a>
-            <a class="" href="">Iniciar sesiòn</a>
-            <a class="" href="">Carrito</a>
-        </nav>
+            <!-- NAVBAR -->
+            <nav class="nav">
+                <a class="" href="index.html">Index</a>
+                <a class="" href="#recetas">Recetas Populares</a>
+                <a class="" href="#contacto">Contacto</a>
+                <a class="" href="./template/registro.html">Registrarse</a>
+                <a class="" href="">Iniciar sesiòn</a>
+                <a class="" href="">Carrito</a>
+            </nav>
+        </div>
 
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main>
         <section id="titulo">
-            <h2 class="titulo"><i>La cocina de Ana</i></h2>
+            <h2 class="titulo"><i>- La cocina de Anna -</i></h2>
         </section>
+        <!-- cambiar el carusel por el que fundiona, previo al carrusel poner la imagen que abarque el ancho de la pagina  -->
 
-        <section class="carrusel" id="carrusel">
-            <!-- INSERTAR CARRUSEL de imagenes -->
+        <section class="cards" id="cards">
             <!-- cards con categorias: Plato principal, Ensaladas, Medendas, Postres y Bebidas, todos linkeados a su respectiva pagina con las recetas -->
             <section class="categorias">
                 <div class="card_02">
-                    <img src="/static/img/recetas/comida/pollo-caprese-con-papas.jpg" alt="plato principal">
+                    <img src="./static/img/comidaDIBB/plato-ppal/brochets_cerdo.jpg" alt="plato principal">
                     <div class="contenido">
                         <a href="#" class="button">Plato Principal</a>
                     </div>
                 </div>
-            
+
                 <div class="card_02">
-                    <img src="/static/img/recetas/comida/Ensalada de vegetales.png" alt="ensaladas">
+                    <img src="./static/img/comidaDIBB/ensalada/ensalada.jpg" alt="ensaladas">
                     <div class="contenido">
                         <a href="#" class="button">Ensaladas</a>
                     </div>
                 </div>
-            
+
                 <div class="card_02">
-                    <img src="/static/img/recetas/desayuno/breakfast-8484285_1280.png" alt="desayunos">
+                    <img src="./static/img/comidaDIBB/desayuno/cafe_bollo.jpg" alt="desayunos">
                     <div class="contenido">
                         <a href="#" class="button">Desayunos</a>
                     </div>
                 </div>
-            
+
                 <div class="card_02">
-                    <img src="/static/img/recetas/meriendas/top-view-healthy-breakfast-table.jpg" alt="meriendas">
+                    <img src="./static/img/comidaDIBB/merienda/leche_galletitas.jpg" alt="meriendas">
                     <div class="contenido">
                         <a href="#" class="button">Meriendas</a>
                     </div>
                 </div>
-            
+
                 <div class="card_02">
-                    <img src="/static/img/recetas/postres/pngegg (22).png" alt="postres">
+                    <img src="./static/img/comidaDIBB/postre/brownies_choco.jpg" alt="postres">
                     <div class="contenido">
                         <a href="#" class="button">Postres</a>
                     </div>
                 </div>
-            
+
                 <div class="card_02">
-                    <img src="/static/img/recetas/bebidas/pngegg (16).png" alt="bebidas">
+                    <img src="./static/img/comidaDIBB/bebida/limonada_02.jpg" alt="bebidas">
                     <div class="contenido">
                         <a href="#" class="button">Bebidas</a>
                     </div>
@@ -105,51 +135,210 @@
             </section>
         </section>
 
+        <!-- BANNER -->
         <section class="banner" id="banner">
-            <!--<img src="/static/img/nav.png" id="banner" alt="Banner">-->
-            <div class="contenido">
+            <div class="contenido_banner">
                 <h1>Recetas Fáciles y Saludables</h1>
-                <p id="presentacion">Disfruta de una gran variedad de recetas deliciosas y nutritivas que puedes
-                    preparar en poco tiempo.</p>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="about" id="about">
-                <h2 class="subtitulo">Sobre nosotros</h2>
-                <p id="nos">
-                    Somos un grupo entusiasta de personas deseosas de compartir con ustedes las recetas que hemos ido
-                    recolectando a lo largo de estos años, para que entre todos podamos formar una comunidad interesada en
-                    la comida saludable, nutritiva y siempre sabroza.
-                    ¡¡Comienza a explorar el sitio y únete a nosotros!!
+                <p>Disfruta de una gran variedad de recetas deliciosas y nutritivas que puedes preparar en poco tiempo.
                 </p>
             </div>
         </section>
 
-        <!-- Muestra las recetas más vistas o más solicitadas en formato Card, con vinculo a la receta-->
-        <section class="recetas">
-            <h2>Recetas Populares</h2>
-            <ul id="lista-recetas">
-            </ul>
-        </section>
-
-        <!-- SECCION A BORRAR -->
-        <section>
-            <audio src="/assets/audio/#" controls></audio>
-            <div class="container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EuYuv1kNDrQ?si=9E0MljWGArsfyZAs"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- ABOUT US -->
+        <section class="about">
+            <div class="nos">
+                <h2 class="subtitulo">Sobre nosotros</h2>
+                <p id="nos">
+                    Quienes hacemos "La Cocina de Anna" somos un grupo entusiasta de personas deseosas de compartir con
+                    ustedes
+                    las recetas que hemos ido
+                    recolectando a lo largo de estos años, para que entre todos podamos formar una comunidad interesada
+                    en la comida saludable, nutritiva y siempre sabroza.
+                    ¡¡Comienza a explorar el sitio y únete a nosotros!!
+                </p>
+            </div>
+            <div class="container_anna">
+                <img src="/static/img/comidaDIBB/anna/anna-.png" alt="Slide Image" />
             </div>
         </section>
 
-        <section>
+        <!-- Muestra las recetas más vistas o más solicitadas en formato Card, con vinculo a la receta-->
+        <!-- CARD de RECETAS -->
+        <section class="recetas" id="recetas">
+            <div id="subtitulo">
+                <h2>Recetas populares</h2>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/comidaDIBB/plato-ppal/pollo_papas.jpg">
+                    </div>
+                    <div class="card-titulo">
+                        <a href="./template/receta_08.html" class="button"><h3>Pollo Caprese</h3></a>
+                    </div>
+                    <div class="card-text">
+                        <p>Delicioso pollo caprese con papas al horno</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/comidaDIBB/plato-ppal/pollo_papas.jpg" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/comidaDIBB/plato-ppal/pollo_papas.jpg" download="">Descargar
+                            imagen</a>
+
+                        <a href="/assets/pollo_papas.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="/static/img/comidaDIBB/plato-ppal/pizza_03.jpg">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Pizza Verde</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Inigualable pizza con verdeo</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/comidaDIBB/plato-ppal/pizza_03.jpg" target="blank">Ver imagen</a>
+
+                        <a href="/static/img/comidaDIBB/plato-ppal/pizza_03.jpg" download="">Descargar imagen</a>
+
+                        <a href="/assets/pizza_03.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive"
+                            src="/static/img/comidaDIBB/plato-ppal/churrasco_papasfritas.jpg">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Churrsaco y Papas fritas</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Un clásico siempre presente</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="/static/img/comidaDIBB/plato-ppal/churrasco_papasfritas.jpg" target="blank">Ver
+                            imagen</a>
+
+                        <a href="/static/img/comidaDIBB/plato-ppal/churrasco_papasfritas.jpg" download="">Descargar
+                            imagen</a>
+
+                        <a href="/assets/churrasco_papasfritas.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img">
+                        <img class="imagen-responsive" src="./static/img/comidaDIBB/postre/shots_frutales.jpg">
+                    </div>
+                    <div class="card-titulo">
+                        <h3>Shot de frutas</h3>
+                    </div>
+                    <div class="card-text">
+                        <p>Un clásico veraniego reformulado</p>
+                    </div>
+                    <div class="card-link">
+                        <a href="./static/img/comidaDIBB/postre/copa_multifruta.jpg" target="blank">Ver imagen</a>
+
+                        <a href="./static/img/comidaDIBB/postre/copa_multifruta.jpg" download="">Descargar imagen</a>
+
+                        <a href="/assets/copa_multifruta.pdf" download=""></a>
+                        <a href="mailto:">Enviar correo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION MUSICA y VIDEOS -->
+        <section class="videos">
+            <h2>Recomendaciones</h2>
+            <div class="container">
+                <iframe width="560" height="315" src="./assets/video/frutas.mp4" title="Frutas" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="./assets/video/lluvia_cena.mp4" title="Galletitas" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <audio src="./assets/audio/(Audio) lluvia_fondo.m4a" autoplay loop controls></audio>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section class="contacto" id="contacto">
+            <div class="contacto-contenedor">
+                <div class="contacto-formulario">
+                    <p>
+                        ¿Quieres colaborar con nosotros? ¿Eres entusiasta de la cocina? Ponte en contacto con nosotros
+                    </p>
+
+                    <h1>Contacto</h1>
+                    <p>¿Tienes alguna pregunta o comentario? No dudes en contactarme.</p>
+                    <!--<form action="enviar" method="post"> -->
+                    <form action="https://formspree.io/f/xjvnazdb" method="POST">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="José María" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Perez García" required>
+                        </div>
+                        <br>
+                        <!-- <div>
+                    <label for="fn">Fecha de nacimiento:</label>
+                    <input type="date" id="fn" name="fn">
+                </div>
+                <br>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" placeholder="18" min="16">
+                </div>
+                <br> -->
+                        <div>
+                            <label>E-mail:</label>
+                            <input type="email" name="email" placeholder="email@email.com" id="email" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="consulta">Motivo de la consulta</label>
+                            <input list="motivo-list" id="consulta" name="consulta">
+                            <datalist id="motivo-list">
+                                <option value="Sugerencia"></option>
+                                <option value="Pedido"></option>
+                                <option value="Otro"></option>
+                            </datalist>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" cols="30" rows="10" maxlength="300"
+                                required>Escribe tu consulta o sugerencia</textarea>
+                            <br>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contacto-imagen">
+                    <img src="./static/img/comidaDIBB/anna/010.jpg" alt="Imagen de contacto">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION COLABORA con NOSOTROS -->
+        <section class="colabora">
             <fieldset>
                 <legend>¡Colabora con nosotros!</legend>
                 <div>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <label for="nombre-colabora">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre-colabora">
                 </div>
                 <br>
                 <div>
@@ -158,12 +347,7 @@
                 </div>
                 <p>Por supuesto daremos créditos a su autor y serán parte de esta gran familia de amantes del buen comer
                 </p>
-
             </fieldset>
-            <p>
-                ¿Quieres colaborar con nosotros? ¿Eres entusiasta de la cocina? Ponte en contacto con nosotros
-            </p>
-            <a href="/template/contacto.html">Formulario de Contacto</a>
         </section>
     </main>
 
@@ -171,18 +355,24 @@
     <footer class="footer" id="footer">
         <p>Copyright &copy; 2024</p>
         <section class="iconos" id="iconos">
-            <!-- <li><a href="/static/img/iconos/facebook.png"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="/static/img/iconos/gorjeo.png"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="/static/img/iconos/instagram.png"><i class="fa fa-instagram"></i></a></li> -->
-            <a alt="fecebook" href="https://www.facebook.com/"><img src="/static/img/iconos/facebook.png"></a>           
-            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="/static/img/iconos/gorjeo.png"></a>
-            <a alt="instagram" href="https://www.instagram.com/"><img src="/static/img/iconos/instagram.png"></a>
-            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="/static/img/iconos/pinterest.png"></a>
-            <a alt="flickr" href="https://www.flickr.com/"><img src="/static/img/iconos/flickr.png"></a>
+            <a alt="fecebook" href="https://www.facebook.com/"><img src="./static/img/iconos/facebook.png" width="32"
+                    height="32"></a>
+            <a alt="twitter" href="https://twitter.com/i/flow/login"><img src="./static/img/iconos/gorjeo.png" width="32"
+                    height="32"></a>
+            <a alt="instagram" href="https://www.instagram.com/"><img src="./static/img/iconos/instagram.png" width="32"
+                    height="32"></a>
+            <a alt="pinterest" href="https://ar.pinterest.com/ideas/"><img src="./static/img/iconos/pinterest.png"
+                    width="32" height="32"></a>
+            <a alt="flickr" href="https://www.flickr.com/"><img src="./static/img/iconos/flickr.png" width="32"
+                    height="32"></a>
         </section>
+        <div class="footer-image">
+            <img src="./static/img/footer.png" alt="Footer Image">
+        </div>
 
     </footer>
     <!-- Enlace al archivo JavaScript externo -->
+    <script src="./js/script.js"></script>
     <!-- <script src="/js/carrusel.js"></script> -->
 </body>
 
